@@ -1,0 +1,154 @@
+.main-card{
+    position: relative;
+    width: 48rem;
+    height: 60rem;
+    z-index: 3;
+    background-color: $color-white;
+    border-radius:$border-radius;
+    margin-top: -2rem;
+    box-shadow: $box-shadow-main;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    &__backgroundBox{
+        flex: 0 0 50%;
+        background-image: url(../img/back-9.jpg);//osam i devet
+        background-position: bottom;
+        background-size: cover;
+        clip-path: polygon(0 0,0 83%,50% 100%,100% 88%,100% 0,0 0);
+    }
+
+    &__imgBox{
+        position: absolute;
+        top: 48.5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 14rem;
+        height: 14rem;
+        background-image: url(../img/me.jpg);
+        background-size: cover;
+        background-position:top;
+        border: 3px solid $color-white;
+        border-radius: 50%;
+        box-shadow: $box-shadow-light;
+    }
+    
+    &__devBox{
+        flex: 0 0 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__name{
+        font-family: 'Alegreya', serif;
+        font-weight: 400;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        color: $color-gray-dark;
+        margin-top: 2.5rem;
+    }
+
+    &__title{
+        font-weight: 400;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $color-primary;
+    
+    }
+    &__social{
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.5rem
+    }
+
+    &__link:link,
+    &__link:visited{
+        color: $color-gray-dark;
+        transition: all 0.2s;
+    }
+
+    &__link:hover,
+    &__link:active{
+        color: $color-primary;
+        
+    }
+
+    &__icon{
+        font-size: 1.7rem; 
+        &--1{
+            font-size: 1.8rem;
+            display: inline-block;
+            margin-left: 1.5rem;
+            color:$color-primary;
+            
+        }
+    }
+
+    &__contactBox{
+        flex:0 0 10%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__cv{
+        flex: 0 0 50%;
+        height: 100%;
+        border-top: 1px solid rgba($color-gray,0.2);
+        border-right: 1px solid rgba($color-gray,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__contact{
+        flex: 0 0 50%;
+        height: 100%;
+        border-top: 1px solid rgba($color-gray,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__download:link,
+    &__download:visited {
+        color:$color-gray-dark;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        display:block;
+        transition: all 0.2s;
+    }
+   
+    &__contactTxt:link,
+    &__contactTxt:visited {
+        color:$color-gray-dark;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        display:block;
+        transition: all 0.2s;
+    }
+
+    &__download:hover,
+    &__download:active{
+        color:$color-primary;
+    }
+
+    &__contactTxt:hover,
+    &__contactTxt:active {
+        color:$color-primary;
+    }
+}

@@ -1,0 +1,37 @@
+.btn{
+    &:link,
+    &:visited{
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.1rem 2rem;
+        font-size: 1.4rem;
+        position: relative;
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-weight: 400;
+        transition: all 0.4s;
+        backface-visibility: hidden; 
+        margin-top: 1rem;
+        
+
+    }
+
+    &--white:link,
+    &--white:visited{
+        color: $color-white;
+        border: 2px solid $color-white;
+        
+    }
+
+    &--white:hover{
+        background-color: $color-white;
+        color:$color-primary; 
+        transform: translateY(-3px);
+        box-shadow: 0 2rem 4rem rgba($color-black,0.2);  
+    } 
+
+    &--white:active{
+        transform: translateY(-1px);
+        box-shadow: 0 1rem 2rem rgba($color-black,0.2);  
+    }
+}

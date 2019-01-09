@@ -1,0 +1,56 @@
+.square{
+    background-color:rgba(white,0.1);
+    border-radius: 4px;
+    position: absolute;
+    top:100%;
+
+    &--1{
+        width: 3rem;
+        height: 3rem;
+        left: 5%;
+        animation: squareUp 50s 35s ease-out infinite;
+    }
+    &--2{
+        width: 6rem;
+        height: 6rem;
+        left: 24%;
+        animation: squareUp 50s 15s ease-out infinite;
+    }
+    &--3{
+        width: 9rem;
+        height: 9rem;
+        left: 36%;
+        animation: squareUp 50s 30s ease-out infinite;
+    }
+    &--4{
+        width: 12rem;
+        height: 12rem;
+        left: 8%;
+        animation: squareUp 50s 40s ease-out infinite;
+    }
+    &--5{
+        width: 6rem;
+        height: 6rem;
+        left: 60%;
+        animation: squareUp 50s 5s ease-out infinite;
+    }
+    &--6{
+        width: 9rem;
+        height: 9rem;
+        left: 89%;
+        animation: squareUp 50s 10s ease-out infinite;
+    }
+    &--7{
+        width: 3rem;
+        height: 3rem;
+        left: 84%;
+        animation: squareUp 50s 2s ease-out infinite;
+    }
+    &--8                                        {
+        width: 12rem;
+        height: 12rem;
+        left: 93%;
+        animation: squareUp 50s 7s ease-out infinite;
+    }
+
+}
